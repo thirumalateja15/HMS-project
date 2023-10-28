@@ -1,0 +1,90 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&family=Young+Serif&display=swap" rel="stylesheet">
+
+<div class="video-container">
+    <video autoplay loop muted>
+        <source src="assets/bgv.mp4" type="video/mp4">
+    </video>
+
+    <nav class="nav" [ngClass]="{'scrolled': isScrolled}">
+        <div class="container">
+            <div class="logo">
+                <a href="#">Hack Pad</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#"><button class="bn">About</button></a></li>
+                    <li><a href="#"><button class="bn">Portfolio</button></a></li>
+                    <li><a href="#"><button class="bn">Services</button></a></li>
+                    <li><a href="#"><button class="bn">Contact</button></a></li>
+                    <li>   
+                        <a>
+                            <button class="bn" (click)="toggleDropdown()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                                </svg>
+                            </button>
+                        </a>
+                        <div [ngClass]="{'show': isDropdownOpen}" class="dropdown-content" style="height: fit-content; width: 200px; border-radius: 20px;">
+                            <a routerLink="/team" style="font-size: 22px; padding-inline: 20px;">Profile</a>
+                            <a routerLink="/hack" style="font-size: 22px;">your's Hack</a>
+                            <a routerLink="/login" style="font-size: 22px;">Login</a>
+                            <a routerLink="/signup" style="font-size: 22px;">Signup</a>
+                          </div>
+                    </li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <div class="content" style="width:100%;">
+        <div class="content-top">
+            <div class="banner-heading">
+                <p>Coding is poetry; a hackathon is your chance to write a masterpiece.</p>
+            </div>
+            <div class="banner-content">
+                <div class="loader">
+                    <div class="box box-1">
+                        <div class="side-left"></div>
+                        <div class="side-right"></div>
+                        <div class="side-top"></div>
+                    </div>
+                    <div class="box box-2">
+                        <div class="side-left"></div>
+                        <div class="side-right"></div>
+                        <div class="side-top"></div>
+                    </div>
+                    <div class="box box-3">
+                        <div class="side-left"></div>
+                        <div class="side-right"></div>
+                        <div class="side-top"></div>
+                    </div>
+                    <div class="box box-4">
+                        <div class="side-left"></div>
+                        <div class="side-right"></div>
+                        <div class="side-top"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-bottom">
+            <button class="cssbuttons-io-button">
+                Get started
+                <div class="icon">
+                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                            fill="currentColor"></path>
+                    </svg>
+                </div>
+            </button>
+        </div>
+    </div>
+</div>
