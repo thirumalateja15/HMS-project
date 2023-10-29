@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { HackComponent } from './hack/hack.component';
+import { CheckpointComponent } from './checkpoint/checkpoint.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { HackComponent } from './hack/hack.component';
     HomeComponent,
     RegisterComponent,
     LoginComponent,
-    HackComponent
+    HackComponent,
+    CheckpointComponent
   ],
   imports: [
     BrowserModule,

@@ -7,7 +7,7 @@
             <div id="mainListDiv" class="main_list">
                 <ul class="navlinks">
                     <li><a href="#"><button class="bn">About</button></a></li>
-                    <li><a href="#"><button class="bn">Portfolio</button></a></li>
+                    <li><a href="#"><button class="bn">Checkpoints</button></a></li>
                     <li><a href="#"><button class="bn">Services</button></a></li>
                     <li><a href="#"><button class="bn">Contact</button></a></li>
                     <li>
@@ -65,13 +65,7 @@
                 </div>
             </div>
             <div class="post-type-container">
-                <input type="text" placeholder="Type something!"
-                    style="background-color: transparent; height: 50px; width: 75%; border-radius: 10px;" />
-                <button class="bn" style="height: 50px;"> Create post &nbsp;
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
-                        <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
-                    </svg>
-                </button>
+                <h1>HACK STARTUPS</h1>
             </div>
         </div>
         <div class="popup" *ngIf="showReviewPopup">
@@ -119,16 +113,16 @@
                 <p style="font-size: 30px;">{{ hours | number: '2.0' }}:{{ minutes | number: '2.0' }}:{{ seconds | number: '2.0' }}</p>
             </div>
             <div class="chat-holder">
-                <div class="chat" *ngFor="let post of posts">
+                <div class="chat" *ngFor="let post of teamChat">
                     <div class="chat-icon">
-                        <img src={{post.icon}} height="100%" width="100%" style="overflow: hidden; border-radius: 50px;" />
+                        <img src="assets/codechefs.jpg" height="100%" width="100%" style="overflow: hidden; border-radius: 50px;" />
                     </div>
                     <div class="chat-holder">
                         <div class="chat-details">
-                            {{post.teamName}}
+                            {{post.sender}}
                         </div>
                         <div class="chat-discription">
-                            {{post.msgDescription}}
+                            {{post.message}}
                         </div>
                     </div>
                 </div>

@@ -324,15 +324,15 @@ button:active {
 /* ************************************************************** */
 
 .bottom-container {
-  margin-top: 850px;
+  margin-top: 750px;
 }
 
 .banner-heading {
   width: 1200px;
   font-family: 'Young Serif', serif;
-  font-size: 80px;
+  font-size: 70px;
   color: aliceblue;
-  padding: 70px;
+  padding: 60px;
 }
 
 .loader {
